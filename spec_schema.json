@@ -1,0 +1,53 @@
+{
+    "title": "Schema for test suite of JSON Pointer",
+    "type": "object",
+    "properties": {
+        "description": {
+            "title": "Description of test cases",
+            "type": "string",
+            "required": true
+        },
+        "document": {
+            "title": "JSON Document",
+            "type": [ "object", "array" ],
+            "required": true
+        },
+        "tests": {
+            "title": "Test cases",
+            "type": "array",
+            "items": {
+                "description": {
+                    "title": "Description of test case",
+                    "type": "string",
+                    "required": true
+                },
+                "pointer": {
+                    "title": "String represented JSON Pointer",
+                    "type": "string",
+                    "required": true
+                },
+                "valid": {
+                    "title": "Expected syntax validity",
+                    "type": "boolean",
+                    "required": true
+                },
+                "data": {
+                    "title": "Expected actual value",
+                    "type": "any",
+                    "required": false
+                },
+                "exception": {
+                    "title": "Expected occured exception",
+                    "type": "string",
+                    "enum": [
+                        "NONE", 
+                        "INVALID_POINTER_SYNTAX", 
+                        "POINTER_REFERENCES_NON_EXISTENT_VALUE"
+                    ],
+                    "default": "NONE",
+                    "required": false
+                }
+            }
+        }
+    }
+}
