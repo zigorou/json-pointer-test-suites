@@ -16,7 +16,6 @@
         {
             "description": "The whole document",
             "pointer": "",
-            "valid": true,
             "data": {
                 "foo": ["bar", "baz"],
                 "": 0,
@@ -33,67 +32,56 @@
         {
             "description": "Root object field (document[\"foo\"])",
             "pointer": "/foo",
-            "valid": true,
             "data": ["bar", "baz"]
         },
         {
             "description": "Nested array member (document[\"foo\"][0])",
             "pointer": "/foo",
-            "valid": true,
             "data": "bar"
         },
         {
             "description": "Empty string object field (document[\"\"])",
             "pointer": "/",
-            "valid": true,
             "data": 0
         },
         {
             "description": "Including escaped slash character object field (document[\"a/b\"])",
             "pointer": "/a~1b",
-            "valid": true,
             "data": 1
         },
         {
             "description": "Including percent character object field (document[\"c%d\"])",
             "pointer": "/c%d",
-            "valid": true,
             "data": 2
         },
         {
             "description": "Including hat charater object field (document[\"e^f\"])",
             "pointer": "/e^f",
-            "valid": true,
             "data": 3
         },
         {
             "description": "Including pipe character object field (document[\"g|h\"])",
             "pointer": "/g|h",
-            "valid": true,
             "data": 4
         },
         {
             "description": "Including back slash character object field (document[\"i\\\\j\"])",
             "pointer": "/i\\j",
-            "valid": true,
             "data": 5
         },
         {
             "description": "Including double quote character object field (document[\"k\\\"l\"])",
             "pointer": "/k\"l",
-            "valid": true,
             "data": 6
         },
         {
             "description": "Including space character object field (document[\" \"])",
             "pointer": "/ ",
-            "valid": true,
             "data": 7
         },
         {
             "description": "Including escaped tilde character object field (document[\"m~n\"])",
             "pointer": "/m~0n",
-            "valid": true,
             "data": 8
         }
     ]

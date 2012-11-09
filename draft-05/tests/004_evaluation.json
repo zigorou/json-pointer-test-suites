@@ -16,13 +16,11 @@
         {
             "description": "signle hyphen token",
             "pointer": "/foo/-",
-            "valid": true,
             "data": null
         },
         {
             "description": "signle hyphen token and non-existente token",
             "pointer": "/foo/-/1",
-            "valid": false,
             "exception": "POINTER_REFERENCES_NON_EXISTENT_VALUE"
         }
     ]

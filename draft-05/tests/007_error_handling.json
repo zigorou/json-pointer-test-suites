@@ -16,19 +16,16 @@
         {
             "description": "pointer doesn't start slash",
             "pointer": "foo",
-            "valid": false,
             "exception": "INVALID_POINTER_SYNTAX"
         },
         {
             "description": "Non existente object property",
             "pointer": "/bar",
-            "valid": false,
             "exception": "POINTER_REFERENCES_NON_EXISTENT_VALUE"
         },
         {
             "description": "Non existente array item",
             "pointer": "/foo/2",
-            "valid": false,
             "exception": "POINTER_REFERENCES_NON_EXISTENT_VALUE"
         }
     ]

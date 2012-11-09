@@ -26,11 +26,6 @@
                     "type": "string",
                     "required": true
                 },
-                "valid": {
-                    "title": "Expected syntax validity",
-                    "type": "boolean",
-                    "required": true
-                },
                 "data": {
                     "title": "Expected actual value",
                     "type": "any",
