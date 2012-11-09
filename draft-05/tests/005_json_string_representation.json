@@ -36,7 +36,7 @@
         },
         {
             "description": "Nested array member (document[\"foo\"][0])",
-            "pointer": "/foo",
+            "pointer": "/foo/0",
             "data": "bar"
         },
         {
